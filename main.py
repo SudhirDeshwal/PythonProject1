@@ -21,4 +21,10 @@ def translate(word):
         return "The word doesn't exist , Please double check it."
 
 input_value = input("Enter word : ")
-print(translate(input_value))
+output = (translate(input_value))
+
+if type(output) == list:
+    for i in output:
+        print(i)
+else:
+    print(output)
