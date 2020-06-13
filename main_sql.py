@@ -11,7 +11,7 @@ database = "ardit700_pm1database"
 
 cursor = con.cursor()
 
-#for input
+#for input with from user
 word=input("Enter the word: ")
 
 query = cursor.execute("SELECT Definition FROM Dictionary WHERE Expression = '%s'" % word)
